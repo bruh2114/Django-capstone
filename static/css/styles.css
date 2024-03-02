@@ -1,0 +1,44 @@
+nav {
+    background-color: #ff6600; /* Orange background */
+    color: white; /* White text */
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+nav a {
+    color: white;
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #ffcc00; /* Lighter orange on hover */
+}
+
+/* Buttons */
+.btn {
+    background-color: #ff6600; /* Orange background */
+    color: white; /* White text */
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #cc5500; /* Darker orange on hover */
+}
+
+/* Cards */
+.card {
+    background-color: #fff; /* White background */
+    border: 1px solid #ff6600; /* Orange border */
+}
+
+.card-title {
+    color: #ff6600; /* Orange text */
+}
+
+.card-text {
+    color: #666; /* Gray text */
+}
