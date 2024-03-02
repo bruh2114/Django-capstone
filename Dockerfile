@@ -1,19 +1,21 @@
-# Use the official Python image as a base image
+# Use an official Python runtime as a parent image
 FROM python:3.9-slim
 
-# Set environment variables
-ENV PYTHONDONTWRITEBYTECODE 1
+# Set environment variables for Python and Django
 ENV PYTHONUNBUFFERED 1
+ENV DJANGO_SETTINGS_MODULE band_website.settings
 
 # Set the working directory in the container
-WORKDIR /app
+WORKDIR /code
 
-# Install dependencies
-COPY requirements.txt .
+# Copy the current directory contents into the container at /code
+COPY . /code/
+
+# Install any needed packages specified in requirements.txt
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Copy the project code into the container
-COPY . .
+# Expose port 8000 to allow communication to/from server
+EXPOSE 8000
 
-# Command to run the Django server
+# Run Django application in development mode
 CMD ["python", "manage.py", "runserver", "0.0.0.0:8000"]
