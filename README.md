@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Django Band Website
 
 This is a Django-based website for managing a band's information, including members, songs, news, and events.
@@ -68,3 +69,6 @@ Open a pull request against the main repository's main branch.
 
 License
 This project is licensed under the MIT License. See the LICENSE file for details.
+=======
+# Django-capstone
+>>>>>>> 0ad2937fecb9c15ce9ddbfb45e05a0311b3d2c10
